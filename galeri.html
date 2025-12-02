@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Karya Santri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Galeri Karya Santri</h1>
+    <p>Karya Pertama: Website Profil Pribadi</p>
+    <nav class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- Konten Galeri -->
+  <main class="container">
+    <section class="card gallery">
+      <h2 class="section-title">🎨 Karya Desain</h2>
+      
+      <div class="gallery-grid"> 
+        <div class="gallery-item">
+          <img src="image/dapur.jpg"alt="piket dapur">
+          <p class="gallery-item-caption">foto lagi piket masak.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="image/foto saat apel pagi.jpg" alt="apel pagi">
+          <p class="gallery-item-caption">foto saat apel pagi di ma'had.</p>
+        </div>
+
+        <div class="gallery-item">
+          <img src="image/gabut.jpg" alt="foto random">
+          <p class="gallery-item-caption"> foto agak random 😂😂.</p>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="image/jum'at.jpg" alt="friday">
+          <p class="gallery-item-caption">foto setelah apel pagi.</p>
+        </div>
+
+
+    </section>
+      
+     <section class="gallery-card">
+    <h2 class="section-title">🎬 Karya Video</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OzRxcipnDUo?si=0hUErbf2wHS5DzuH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+    </div>
+     </section> 
+  </main>
+  
+  <style>
+    /* Bungkus iframe di div biar bisa diatur rasio */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* opsional, biar matching sama card */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+  iframe, video {
+    width: 90%;
+    height: 350px;
+  }
+
+
+  </style>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    &copy; 2025 # HSI Boarding School Purworejo — Kelas X B
+  </footer>
+</body>
+</html>
